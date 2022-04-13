@@ -8,6 +8,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      //defult state
       videos: [],
       currentVideo: null
     };
