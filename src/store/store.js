@@ -9,7 +9,7 @@ var store = createStore(
   rootReducer,
   {videoList: exampleVideoData,
     currentVideo: exampleVideoData[0]},
-  applyMiddleware(thunk)
+  applyMiddleware(thunk) // thunk required in the store and allow your store to interpret your thunks.
 );
 
 export default store;
