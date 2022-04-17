@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import VideoListEntry from './VideoListEntry.js';
 
-var VideoList = ({videos, handleVideoListEntryTitleClick,handleAutoPlayBtnClick}) => (
+var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
   <div className="video-list">
     {
       videos.map(video => (
@@ -10,7 +10,7 @@ var VideoList = ({videos, handleVideoListEntryTitleClick,handleAutoPlayBtnClick}
           key={video.etag}
           video={video}
           handleVideoListEntryTitleClick={handleVideoListEntryTitleClick}
-          handleAutoPlayBtnClick = {handleAutoPlayBtnClick}
+
         />
       ))
     }

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import VideoList from './../components/VideoList.js';
 import changeVideo from './../actions/currentVideo.js';
-import autoPlay from './../actions/autoPlay.js';
+// import autoPlay from './../actions/autoPlay.js';
 
 
 const mapStateToProps = (state) => {
@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
 
     handleVideoListEntryTitleClick: (video) => dispatch(changeVideo(video)),
-    handleAutoPlayBtnClick: (video) => dispatch(autoPlay(video))
+    // handleAutoPlayBtnClick: (video) => dispatch(autoPlay(video))
 
 
   };
